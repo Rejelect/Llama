@@ -1,8 +1,6 @@
 import streamlit as st
-from gtts import gTTS
 from llama_cpp import Llama
-import os
-import base64
+
 llm = Llama.from_pretrained(
 	repo_id="QuantFactory/Meta-Llama-3-8B-Instruct-GGUF",
 	filename="Meta-Llama-3-8B-Instruct.Q2_K.gguf",
